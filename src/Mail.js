@@ -22,7 +22,6 @@ function Mail() {
     return (
         <div className="mail">
             <div className="mail__tools">
-
                 <div className="mail__toolsLeft">
                     <IconButton onClick={() => history.push("/")}>
                         <ArrowBackIcon />
@@ -59,11 +58,9 @@ function Mail() {
                     <IconButton>
                         <MoreVertIcon />
                     </IconButton>
-
                 </div>
 
                 <div className="mail__toolsRight">
-
                     <IconButton>
                         <UnfoldMoreIcon />
                     </IconButton>
@@ -82,13 +79,12 @@ function Mail() {
                     <h2>Subject</h2>
                     <LabelImportantIcon className="mail__important" />
                     <p>Title</p>
-                    <p>10pm</p>
+                    <p className="mail__time">10pm</p>
                 </div>
 
                 <div className="mail__message">
-                    This is a message
+                    <p>This is a message</p>
                 </div>
-
             </div>
         </div>
     );
