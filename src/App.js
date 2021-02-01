@@ -11,8 +11,12 @@ import {
   Link
 } from "react-router-dom";
 import SendMail from './SendMail';
+import { useSelector } from 'react-redux';
 
 function App() {
+  const sendMessageIsOpn = useSelector(selectsendMessageIsOpen
+                { errors.to && <p className="sendMail__error">To is Required</p> });
+
   return (
     <Router>
       <div className="app">
